@@ -1,0 +1,318 @@
+.
+├── contributor/
+│   ├── code/
+│   │   ├── Checkerboard.ts
+│   │   ├── LICENSE
+│   │   └── README.md
+│   ├── CODE_OF_CONDUCT.md
+│   └── COMMIT_CONVENTION.md
+├── packages/
+│   ├── app/
+│   │   ├── src/
+│   │   │   ├── App.ts
+│   │   │   └── index.ts
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   └── package.json
+│   ├── core/
+│   │   ├── core/
+│   │   │   ├── src/
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   └── draw/
+│   │       ├── src/
+│   │       │   └── index.ts
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       └── package.json
+│   ├── decorator/
+│   │   ├── src/
+│   │   │   ├── data.ts
+│   │   │   └── index.ts
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   └── package.json
+│   ├── display/
+│   │   ├── src/
+│   │   │   ├── Box.ts
+│   │   │   ├── Canvas.ts
+│   │   │   ├── Ellipse.ts
+│   │   │   ├── Frame.ts
+│   │   │   ├── Group.ts
+│   │   │   ├── Image.ts
+│   │   │   ├── Leafer.ts
+│   │   │   ├── Line.ts
+│   │   │   ├── Path.ts
+│   │   │   ├── Pen.ts
+│   │   │   ├── Polygon.ts
+│   │   │   ├── Rect.ts
+│   │   │   ├── Star.ts
+│   │   │   ├── Text.ts
+│   │   │   ├── UI.ts
+│   │   │   └── index.ts
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   └── package.json
+│   ├── display-module/
+│   │   ├── bounds/
+│   │   │   ├── src/
+│   │   │   │   ├── UIBounds.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   ├── data/
+│   │   │   ├── src/
+│   │   │   │   ├── BoxData.ts
+│   │   │   │   ├── CanvasData.ts
+│   │   │   │   ├── EllipseData.ts
+│   │   │   │   ├── FrameData.ts
+│   │   │   │   ├── GroupData.ts
+│   │   │   │   ├── ImageData.ts
+│   │   │   │   ├── LeaferData.ts
+│   │   │   │   ├── LineData.ts
+│   │   │   │   ├── PathData.ts
+│   │   │   │   ├── PenData.ts
+│   │   │   │   ├── PolygonData.ts
+│   │   │   │   ├── RectData.ts
+│   │   │   │   ├── StarData.ts
+│   │   │   │   ├── TextData.ts
+│   │   │   │   ├── UIData.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   ├── display-module/
+│   │   │   ├── src/
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   └── render/
+│   │       ├── src/
+│   │       │   ├── RectRender.ts
+│   │       │   ├── UIRender.ts
+│   │       │   └── index.ts
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       └── package.json
+│   ├── event/
+│   │   ├── src/
+│   │   │   ├── DragBoundsHelper.ts
+│   │   │   ├── DragEvent.ts
+│   │   │   ├── DropEvent.ts
+│   │   │   ├── KeyEvent.ts
+│   │   │   ├── Keyboard.ts
+│   │   │   ├── MoveEvent.ts
+│   │   │   ├── PointerButton.ts
+│   │   │   ├── PointerEvent.ts
+│   │   │   ├── RotateEvent.ts
+│   │   │   ├── SwipeEvent.ts
+│   │   │   ├── TouchEvent.ts
+│   │   │   ├── UIEvent.ts
+│   │   │   ├── ZoomEvent.ts
+│   │   │   └── index.ts
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   └── package.json
+│   ├── external/
+│   │   ├── src/
+│   │   │   ├── color.ts
+│   │   │   └── index.ts
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   └── package.json
+│   ├── hit/
+│   │   ├── src/
+│   │   │   ├── HitCanvasManager.ts
+│   │   │   ├── LeafHit.ts
+│   │   │   ├── RectHit.ts
+│   │   │   ├── TextHit.ts
+│   │   │   ├── UIHit.ts
+│   │   │   ├── canvas.ts
+│   │   │   ├── index.ts
+│   │   │   ├── pick.ts
+│   │   │   └── selector.ts
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   └── package.json
+│   ├── interaction/
+│   │   ├── interaction/
+│   │   │   ├── src/
+│   │   │   │   ├── Cursor.ts
+│   │   │   │   ├── Dragger.ts
+│   │   │   │   ├── Interaction.ts
+│   │   │   │   ├── InteractionHelper.ts
+│   │   │   │   ├── config.ts
+│   │   │   │   ├── emit.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   ├── interaction-miniapp/
+│   │   │   ├── src/
+│   │   │   │   ├── Interaction.ts
+│   │   │   │   ├── PointerEventHelper.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   └── interaction-web/
+│   │       ├── src/
+│   │       │   ├── Interaction.ts
+│   │       │   ├── KeyEventHelper.ts
+│   │       │   ├── PointerEventHelper.ts
+│   │       │   └── index.ts
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       └── package.json
+│   ├── interface/
+│   │   ├── src/
+│   │   │   ├── app/
+│   │   │   │   ├── IApp.ts
+│   │   │   │   └── ILeafer.ts
+│   │   │   ├── editor/
+│   │   │   │   └── IEditor.ts
+│   │   │   ├── module/
+│   │   │   │   ├── IColorConvert.ts
+│   │   │   │   ├── IEffect.ts
+│   │   │   │   ├── IExport.ts
+│   │   │   │   ├── IFilter.ts
+│   │   │   │   ├── IPaint.ts
+│   │   │   │   ├── IPathArrow.ts
+│   │   │   │   ├── IState.ts
+│   │   │   │   ├── ITextConvert.ts
+│   │   │   │   ├── ITransition.ts
+│   │   │   │   ├── IUIBounds.ts
+│   │   │   │   ├── IUIHit.ts
+│   │   │   │   └── IUIRender.ts
+│   │   │   ├── type/
+│   │   │   │   ├── IComputedType.ts
+│   │   │   │   ├── IStringType.ts
+│   │   │   │   └── IType.ts
+│   │   │   ├── IAnimation.ts
+│   │   │   ├── ICachedShape.ts
+│   │   │   ├── ICommonAttr.ts
+│   │   │   ├── IScroller.ts
+│   │   │   ├── IUI.ts
+│   │   │   └── index.ts
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   └── package.json
+│   ├── partner/
+│   │   ├── color/
+│   │   │   ├── src/
+│   │   │   │   ├── color.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   ├── effect/
+│   │   │   ├── src/
+│   │   │   │   ├── BackgroundBlur.ts
+│   │   │   │   ├── Blur.ts
+│   │   │   │   ├── InnerShadow.ts
+│   │   │   │   ├── Shadow.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   ├── gradient/
+│   │   │   ├── src/
+│   │   │   │   ├── conic.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── linear.ts
+│   │   │   │   └── radial.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   ├── image/
+│   │   │   ├── src/
+│   │   │   │   ├── check.ts
+│   │   │   │   ├── data.ts
+│   │   │   │   ├── image.ts
+│   │   │   │   ├── index.ts
+│   │   │   │   ├── mode.ts
+│   │   │   │   ├── pattern.ts
+│   │   │   │   └── recycle.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   ├── mask/
+│   │   │   ├── src/
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   ├── paint/
+│   │   │   ├── src/
+│   │   │   │   ├── Compute.ts
+│   │   │   │   ├── Fill.ts
+│   │   │   │   ├── FillText.ts
+│   │   │   │   ├── Shape.ts
+│   │   │   │   ├── Stroke.ts
+│   │   │   │   ├── StrokeText.ts
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   ├── partner/
+│   │   │   ├── src/
+│   │   │   │   └── index.ts
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── package.json
+│   │   └── text/
+│   │       ├── src/
+│   │       │   ├── CharLayout.ts
+│   │       │   ├── CharType.ts
+│   │       │   ├── TextCase.ts
+│   │       │   ├── TextClip.ts
+│   │       │   ├── TextConvert.ts
+│   │       │   ├── TextDecoration.ts
+│   │       │   ├── TextLayout.ts
+│   │       │   ├── TextRowHelper.ts
+│   │       │   ├── TextRows.ts
+│   │       │   └── index.ts
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       └── package.json
+│   └── platform/
+│       ├── canvaskit/
+│       │   ├── src/
+│       │   │   └── index.ts
+│       │   ├── LICENSE
+│       │   ├── README.md
+│       │   └── package.json
+│       ├── miniapp/
+│       │   ├── src/
+│       │   │   └── index.ts
+│       │   ├── LICENSE
+│       │   ├── README.md
+│       │   └── package.json
+│       ├── node/
+│       │   ├── src/
+│       │   │   └── index.ts
+│       │   ├── LICENSE
+│       │   ├── README.md
+│       │   └── package.json
+│       ├── web/
+│       │   ├── src/
+│       │   │   └── index.ts
+│       │   ├── LICENSE
+│       │   ├── README.md
+│       │   └── package.json
+│       └── worker/
+│           ├── src/
+│           │   └── index.ts
+│           ├── LICENSE
+│           ├── README.md
+│           └── package.json
+├── src/
+│   └── index.ts
+├── .gitignore
+├── LICENSE
+├── README.md
+└── package.json

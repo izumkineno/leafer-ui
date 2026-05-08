@@ -1,6 +1,6 @@
 {
   "name": "leafer-ui",
-  "version": "2.0.8",
+  "version": "2.1.0",
   "author": "Chao (Leafer) Wan",
   "license": "MIT",
   "type": "module",
@@ -13,7 +13,7 @@
   "types": "types/index.d.ts",
   "unpkg": "dist/web.min.js",
   "jsdelivr": "dist/web.min.js",
-  "files": ["src","types","dist"],
+  "files": ["src","types","dist","README-CN.md"],
   "repository": {
     "type": "git",
     "url": "https://github.com/leaferjs/leafer-ui"
@@ -33,15 +33,15 @@
     "engine"
   ],
   "dependencies": {
-    "@leafer/core": "2.0.8",
-    "@leafer/partner": "2.0.8",
-    "@leafer/interface": "2.0.8",
-    "@leafer-ui/draw": "2.0.8",
-    "@leafer-ui/core": "2.0.8",
-    "@leafer-ui/web": "2.0.8",
-    "@leafer-ui/interaction-web": "2.0.8",
-    "@leafer-ui/partner": "2.0.8",
-    "@leafer-ui/interface": "2.0.8",
-    "@leafer-in/interface": "2.0.8"
+    "@leafer/core": "2.1.0",
+    "@leafer/partner": "2.1.0",
+    "@leafer/interface": "2.1.0",
+    "@leafer-ui/draw": "2.1.0",
+    "@leafer-ui/core": "2.1.0",
+    "@leafer-ui/web": "2.1.0",
+    "@leafer-ui/interaction-web": "2.1.0",
+    "@leafer-ui/partner": "2.1.0",
+    "@leafer-ui/interface": "2.1.0",
+    "@leafer-in/interface": "2.1.0"
   }
 }

@@ -1,4 +1,4 @@
-import { ILeaf, ILeafComputedData, ILeafData, ILeafInputData, ILeaferCanvas, IRenderOptions, IExportOptions, IExportResult, IPathDrawer, IPointData, IPathCommandData, IBoundsData, IObject, IPathString, ILeaferImage, IPathCreator, IAnswer, IPickOptions, IPickResult, IValue, ICanvasContext2DSettings, IFourNumber, IFindCondition, IBoolean, ICanvasContext2D, IJSONOptions, IMatrixData, ISizeData, ITransition, IAround, IMultimediaType, IDirection4, IOptionPointData, IDirection } from '@leafer/interface'
+import { ILeaf, ILeafComputedData, ILeafData, ILeafInputData, ILeaferCanvas, IRenderOptions, IExportOptions, IExportResult, IPathDrawer, IPointData, IPathCommandData, IBoundsData, IObject, IPathString, ILeaferImage, IPathCreator, IAnswer, IPickOptions, IPickResult, IValue, ICanvasContext2DSettings, IFourNumber, IFindCondition, IBoolean, ICanvasContext2D, IJSONOptions, IMatrixData, ISizeData, ITransition, IAround, IMultimediaType, IDirection4, IOptionPointData, IDirection, IPathCommandDataWithWindingRule } from '@leafer/interface'
 
 import {
     IFillAttrData, IFillInputData, IFillComputedData,
@@ -129,6 +129,7 @@ export interface IPolygon extends IPolygonAttrData, IUI {
 }
 interface IPolygonAttrData {
     sides?: number
+    startAngle?: number
     points?: number[] | IPointData[]
     curve?: boolean | number
 }
@@ -143,6 +144,7 @@ export interface IStar extends IStarAttrData, IUI {
 interface IStarAttrData {
     corners?: number
     innerRadius?: number
+    startAngle?: number
 }
 
 export interface IStarData extends IStarAttrData, IUIData { }
@@ -600,6 +602,7 @@ export interface IUIData extends IUIAttrData, IUIComputedData, ILeafData {
     __strokeWidthCache?: number // 一般用于固定线宽的箭头做缓存对比
     __hasMultiStrokeStyle?: number // 是否存在多个不同的描述样式（同时存储多个描边样式中的最大宽度用于运算）
     readonly __hasMultiPaint?: boolean
+    __hasStrokeSides?: number // 是否存在多边，存在时存储最大值
 
     __isAlphaPixelFill?: boolean // png / svg / webp
     __isAlphaPixelStroke?: boolean
@@ -619,6 +622,7 @@ export interface IUIData extends IUIAttrData, IUIComputedData, ILeafData {
     __blendLayer?: boolean
 
     __boxStroke?: boolean // box闭合描边，可不用计算miterLimit造成的渲染包围盒变化
+    __pathForStroke?: IPathCommandDataWithWindingRule // 笔触的填充路径，一般用于多个strokeWidth的矩形
 
     // text
     __font?: string
@@ -627,6 +631,8 @@ export interface IUIData extends IUIAttrData, IUIComputedData, ILeafData {
     __needComputePaint?: boolean
     __computePaint(): void
     __getRealStrokeWidth(childStyle?: IStrokeComputedStyle): number
+
+    __checkComplex(): void
 
     __setPaint(attrName: 'fill' | 'stroke', value: IValue): void
     __removePaint(attrName: 'fill' | 'stroke', removeInput?: boolean): void
